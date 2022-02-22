@@ -1,0 +1,65 @@
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<div id="Layer1" style="position:absolute; left:342px; top:55px; width:698px; height:232px; z-index:1">&lt;h2&gt;<br>
+  &lt;script language=&quot;JavaScript1.2&quot;&gt;
+  <p>/*<br>
+    Neon Lights Text<br>
+    By JavaScript Kit (http://javascriptkit.com)<br>
+    Over 400+ free scripts here!<br>
+    */</p>
+  <p>var message=&quot;Welcome to JavaScript Kit!&quot;<br>
+    var neonbasecolor=&quot;gray&quot;<br>
+    var neontextcolor=&quot;yellow&quot;<br>
+    var flashspeed=100 //in milliseconds</p>
+  <p>///No need to edit below this line/////</p>
+  <p>var n=0<br>
+    if (document.all||document.getElementById){<br>
+    document.write('')<br>
+    for (m=0;m&lt;message.length;m++)<br>
+    document.write('&lt;span id=&quot;neonlight'+m+'&quot;&gt;'+message.charAt(m)+'&lt;/span&gt;')<br>
+    document.write('')<br>
+    }<br>
+    else<br>
+    document.write(message)</p>
+  <p>function crossref(number){<br>
+    var crossobj=document.all? eval(&quot;document.all.neonlight&quot;+number) : document.getElementById(&quot;neonlight&quot;+number)<br>
+    return crossobj<br>
+    }</p>
+  <p>function neon(){</p>
+  <p>//Change all letters to base color<br>
+    if (n==0){<br>
+    for (m=0;m&lt;message.length;m++)<br>
+    //eval(&quot;document.all.neonlight&quot;+m).style.color=neonbasecolor<br>
+    crossref(m).style.color=neonbasecolor<br>
+    }</p>
+  <p>//cycle through and change individual letters to neon color<br>
+    crossref(n).style.color=neontextcolor</p>
+  <p>if (n&lt;message.length-1)<br>
+    n++<br>
+    else{<br>
+    n=0<br>
+    clearInterval(flashing)<br>
+    setTimeout(&quot;beginneon()&quot;,1500)<br>
+    return<br>
+    }<br>
+    }</p>
+  <p>function beginneon(){<br>
+    if (document.all||document.getElementById)<br>
+    flashing=setInterval(&quot;neon()&quot;,flashspeed)<br>
+    }<br>
+    beginneon()<br>
+  </p>
+  <p>&lt;/script&gt;<br>
+  &lt;/h2&gt;</p>
+  <p>&lt;p align=&quot;center&quot;&gt;This free script provided by&lt;br /&gt;<br>
+  &lt;a href=&quot;http://javascriptkit.com&quot;&gt;JavaScript Kit&lt;/a&gt;&lt;/p&gt;</p>
+</div>
+
